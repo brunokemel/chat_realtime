@@ -1,3 +1,5 @@
 Chat 
 venv\Scripts\activate
 deactivate
+
+uvicorn app.main:app --reload
