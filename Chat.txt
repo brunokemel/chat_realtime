@@ -1,0 +1,3 @@
+Chat 
+venv\Scripts\activate
+deactivate
