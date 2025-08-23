@@ -1,34 +1,67 @@
-# Chat em tempo real com autenticação JWT e persistência em PostgreSQL
+Chat em Tempo Real com Autenticação JWT e Persistência em PostgreSQL
 
-> 🚧 **Projeto em construção** — aceito sujestões para meu projeto melhorar, em breve mais informações.
+🚧 Projeto em construção — sugestões para melhorias são bem-vindas. Mais funcionalidades serão adicionadas em breve.
 
-Este repositório está dedicado ao desenvolvimento de um sistema de chat em tempo real. Atualmente, encontra-se em fase inicial de implementação.
+Este repositório contém um sistema de chat em tempo real, com autenticação de usuários via JWT e persistência de mensagens em PostgreSQL.
 
-## 🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
 
-- **Python**: Linguagem principal do projeto.
+Python: Linguagem principal do projeto
 
-## 📁 Estrutura do Repositório
+FastAPI: Framework web para APIs
 
-- `app/`: Diretório contendo o código-fonte da aplicação.
-- `Chat.txt`: Arquivo de texto com informações ou dados relacionados ao chat.
-- `package.json`: Arquivo de configuração do projeto (possivelmente relacionado ao uso de ferramentas ou bibliotecas JavaScript).
-- `requirements.txt`: Arquivo que lista as dependências do projeto Python.
+PostgreSQL: Banco de dados para armazenamento das mensagens e usuários
 
-## 🚀 Como Executar
+WebSockets: Comunicação em tempo real entre clientes
 
-1. Clone este repositório:
+📁 Estrutura do Repositório
 
-   ```bash
-   git clone https://github.com/brunokemel/chat_realtime.git
-   cd chat_realtime
+app/ — Código-fonte da aplicação
 
-Instale as dependências:
-  bash:
-    pip install -r requirements.txt
+Chat.txt — Arquivo com informações ou dados relacionados ao chat
 
-Inicie a aplicação:
-  bash: python app/main.py
+requirements.txt — Dependências Python
 
+package.json — Configuração de ferramentas ou bibliotecas JS (se aplicável)
 
-    
+🔑 Funcionalidades
+
+Autenticação de usuários com JWT
+
+Chat em tempo real via WebSocket
+
+Persistência das mensagens no PostgreSQL
+
+Histórico de mensagens (em desenvolvimento)
+
+Suporte a múltiplas salas de chat (em desenvolvimento)
+
+⚙️ Pré-requisitos
+
+Python 3.10+
+
+PostgreSQL
+
+Node.js (caso utilize scripts JS auxiliares)
+
+Como Executar Localmente
+# Clone o repositório
+git clone https://github.com/brunokemel/chat_realtime.git
+cd chat_realtime
+
+# Crie e ative um ambiente virtual (recomendado)
+python -m venv venv
+# Linux/macOS
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Configure o PostgreSQL
+# - Crie um banco de dados e usuário
+# - Atualize as configurações de conexão no arquivo de configuração
+
+# Execute a aplicação
+uvicorn app.main:app --reload
