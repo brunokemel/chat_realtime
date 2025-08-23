@@ -1,4 +1,4 @@
-# Chat Realtime
+# Chat em tempo real com autenticação JWT e persistência em PostgreSQL
 
 > 🚧 **Projeto em construção** — aceito sujestões para meu projeto melhorar, em breve mais informações.
 
