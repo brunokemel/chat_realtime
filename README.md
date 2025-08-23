@@ -1,6 +1,6 @@
 # Chat Realtime
 
-> 🚧 **Projeto em construção** — em breve mais informações.
+> 🚧 **Projeto em construção** — aceito sujestões para meu projeto melhorar, em breve mais informações.
 
 Este repositório está dedicado ao desenvolvimento de um sistema de chat em tempo real. Atualmente, encontra-se em fase inicial de implementação.
 
@@ -29,4 +29,6 @@ Instale as dependências:
 
 Inicie a aplicação:
   bash: python app/main.py
+
+
     
